@@ -450,6 +450,9 @@
       border-radius: 50%;
       display: block;
     }
+    .girl-avatar img.avatar-top {
+      object-position: center 24%;
+    }
 
     .bride-card .girl-avatar {
       width: 96px; height: 96px;
@@ -567,6 +570,11 @@
       .event::before { left: -1.5rem; }
       .girl-card.bride-card { grid-column: span 1; }
     }
+    @media (min-width: 980px) {
+      .girls-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+    }
   </style>
 </head>
 <body>
@@ -627,7 +635,7 @@
       </div>
 
       <div class="girl-card">
-        <div class="girl-avatar"><img src="ayushi.png" alt="Ayushi" /></div>
+        <div class="girl-avatar"><img class="avatar-top" src="ayushi.png" alt="Ayushi" /></div>
         <p class="girl-name">Ayushi</p>
       </div>
 
