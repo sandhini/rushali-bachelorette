@@ -776,7 +776,7 @@
       position: absolute;
       inset: 0;
       z-index: -2;
-      background: var(--look-image) center / cover;
+      background: var(--look-image) var(--look-position, center) / cover;
       transition: transform 700ms ease;
     }
 
@@ -797,6 +797,44 @@
     .look-card p {
       margin: 16px 0 0;
       color: rgba(251, 247, 243, 0.78);
+    }
+
+    .look-shop-label {
+      margin-top: 22px;
+      color: rgba(251, 247, 243, 0.66);
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .look-picks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .look-picks a {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 11px;
+      border: 1px solid rgba(251, 247, 243, 0.26);
+      border-radius: 999px;
+      color: var(--porcelain);
+      background: rgba(251, 247, 243, 0.08);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1.35;
+      text-decoration: none;
+    }
+
+    .look-picks a:hover,
+    .look-picks a:focus-visible {
+      color: var(--oxblood);
+      background: var(--porcelain);
+      border-color: var(--porcelain);
     }
 
     .look-card .tag {
@@ -1468,35 +1506,53 @@
       <div class="section-heading-row reveal">
         <div>
           <p class="eyebrow">The dress code</p>
-          <h2 class="section-title" id="looks-title">A pink-and-white wardrobe for every chapter.</h2>
+          <h2 class="section-title" id="looks-title">A pink-and-blue wardrobe for every chapter.</h2>
         </div>
-        <p class="section-kicker">Rushali loves pink and white, so keep the weekend romantic, tonal, and polished. Think bridal-party editorial rather than costume: soft pink, ivory, white, rose, pearl, champagne, silver, and tiny hits of black for the evening.</p>
+        <p class="section-kicker">Switch the palette to pink and blue: candy pink, ballet pink, powder blue, cornflower, ocean blue, pearl, silver, and glossy metallic accents. Think polished bachelorette editorial, not costume, with silhouettes that feel photographable from brunch through Bourbon Street.</p>
       </div>
 
       <div class="lookbook">
-        <article class="look-card reveal" style="--look-image: url('images/nola/banner-friday-conti-street.jpg');">
+        <article class="look-card reveal" style="--look-image: url('images/looks/friday-pink-dress.jpg'); --look-position: center top;">
           <p class="look-meta">Friday night / dinner + villa</p>
           <h3>Pretty after the flight</h3>
-          <p>Wear an easy pink, white, or ivory dinner look: silk skirt, slip dress, tailored short set, satin trouser, pretty tank, low block heel, ballet flat, or polished sandal. Pack pajamas or a soft set on top of your suitcase for game night.</p>
-          <span class="tag">Travel-friendly pink / white / ivory</span>
+          <p>Land in something easy but still elevated: a rose-pink or ocean-blue midi, delicate jewelry, and heels you can actually stand in after the flight. The energy is soft glamour for dinner, then a quick switch into villa-comfy mode later.</p>
+          <p class="look-shop-label">Shop the vibe</p>
+          <div class="look-picks">
+            <a href="https://www.anthropologie.com/shop/lspace-mallorca-midi-dress" target="_blank" rel="noopener noreferrer">Anthro LSPACE Mallorca Midi</a>
+          </div>
+          <span class="tag">Travel-friendly pink / blue midi</span>
         </article>
-        <article class="look-card reveal" style="--look-image: url('images/nola/gallery-french-quarter-balcony.jpg');">
+        <article class="look-card reveal" style="--look-image: url('images/looks/saturday-day-pink-blue-outfit.jpg'); --look-position: center top;">
           <p class="look-meta">Saturday day / Quarter stroll</p>
           <h3>Sweet street-style</h3>
-          <p>Go bright, fresh, and walkable: pink sundress, white poplin skirt, linen vest set, eyelet, soft floral, scarf, sunglasses, crossbody, and shoes that can handle brunch, tarot, shops, beignets, and balcony photos.</p>
-          <span class="tag">Pink-and-white daytime / real walking shoe</span>
+          <p>Go crisp, sunny, and photo-ready: pale-blue stripes, pink prints, breathable cotton, and sandals or sneakers that can survive brunch, tarot, balcony photos, and a lot of French Quarter walking without sacrificing the outfit.</p>
+          <p class="look-shop-label">Shop the vibe</p>
+          <div class="look-picks">
+            <a href="https://www.anthropologie.com/shop/celandine-cotton-a-line-midi-dress" target="_blank" rel="noopener noreferrer">Anthro Celandine Cotton Midi</a>
+            <a href="https://www.anthropologie.com/shop/mare-mare-strapless-shirting-midi-dress?color=546&amp;type=STANDARD" target="_blank" rel="noopener noreferrer">Anthro Mare Mare Blue Stripe Midi</a>
+          </div>
+          <span class="tag">Pink-and-blue daytime / real walking shoe</span>
         </article>
-        <article class="look-card reveal" style="--look-image: url('images/nola/banner-saturday-bourbon-street.jpg');">
+        <article class="look-card reveal" style="--look-image: url('images/looks/saturday-night-pink-satin.jpg'); --look-position: center top;">
           <p class="look-meta">Saturday night / full glam</p>
           <h3>Champagne mischief</h3>
-          <p>This is the dress-up moment. Bring a pink, white, rose, silver, champagne, or black accent look that works from dinner to ghost tour to jazz bar: mini, slip, corset top, tailored blazer, kitten heel, platform, or block heel.</p>
-          <span class="tag">Let Rushali own the brightest bridal white</span>
+          <p>This is the big bachelorette fashion moment: candy pink or icy blue, mini length, clean neckline, statement earrings, and shoes that still work after dinner. Think glossy, flirtatious, and a little dramatic without tipping into costume.</p>
+          <p class="look-shop-label">Shop the vibe</p>
+          <div class="look-picks">
+            <a href="https://www.revolve.com/lovers-and-friends-layla-mini-dress-in-candy-pink/dp/LOVF-WD4559/?d=Womens" target="_blank" rel="noopener noreferrer">REVOLVE Layla Mini Dress</a>
+            <a href="https://www.revolve.com/sndys-x-revolve-angel-mini-dress-in-light-blue/dp/SDYS-WD261/?d=Womens" target="_blank" rel="noopener noreferrer">REVOLVE Angel Mini Dress</a>
+          </div>
+          <span class="tag">Pink / blue glam with main-character energy</span>
         </article>
-        <article class="look-card reveal" style="--look-image: url('images/nola/banner-sunday-streetcar.jpg');">
+        <article class="look-card reveal" style="--look-image: url('images/looks/sunday-blue-outfit.jpg'); --look-position: center top;">
           <p class="look-meta">Sunday day / brunch + travel</p>
           <h3>Soft landing</h3>
-          <p>Keep it pretty but forgiving: pink tee with trousers, white cotton dress, breezy matching set, oversized button-down, comfortable sandal or sneaker, sunglasses, claw clip, and a layer you can wear on the plane.</p>
-          <span class="tag">Recovery brunch / airport-ready</span>
+          <p>Sunday should feel forgiving but still chic: a pink or light-blue knit midi, clean sandal or sneaker, sunglasses, claw clip, and one layer you will not hate on the plane. Think recovery brunch, but expensive-looking.</p>
+          <p class="look-shop-label">Shop the vibe</p>
+          <div class="look-picks">
+            <a href="https://www.anthropologie.com/shop/lspace-alexis-cutout-rib-midi-dress" target="_blank" rel="noopener noreferrer">Anthro LSPACE Alexis Rib Midi</a>
+          </div>
+          <span class="tag">Recovery brunch / airport-ready in pink or blue</span>
         </article>
       </div>
     </section>
@@ -1587,6 +1643,11 @@
     </div>
     <p class="photo-credits">
       Photo credits:
+      Looks photography from MESHKI:
+      <a href="https://www.meshki.us/products/imogen-off-shoulder-slinky-maxi-dress-candy-pink">Friday pink dress</a>;
+      <a href="https://www.meshki.us/products/helena-one-shoulder-linen-mini-dress-powder-blue">Saturday day outfit</a>;
+      <a href="https://www.meshki.us/products/romilly-sequin-mini-dress-candy-pink">Saturday night satin dress</a>;
+      <a href="https://www.meshki.us/products/maureen-cotton-shirring-maxi-dress-powder-blue">Sunday blue outfit</a>;
       <a href="https://commons.wikimedia.org/wiki/File:Bourbon_Street-French_Quarter-New_Orleans.jpg">Bourbon Street</a> by Yair-haklai;
       <a href="https://commons.wikimedia.org/wiki/File:Frenchmen_Street_2001_New_Orleans_023.jpg">balcony scene</a> by marbla123;
       <a href="https://commons.wikimedia.org/wiki/File:Brassband.jpg">brass band</a> by NawlinWiki;
